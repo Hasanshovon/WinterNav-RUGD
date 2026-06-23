@@ -1,5 +1,7 @@
 # WinterNav-RUGD
 
+https://github.com/user-attachments/assets/ab1ebfa4-7853-40aa-82af-8a5c4be7aaf6
+
 > **Safety-oriented traversability mapping for small autonomous ground vehicles using off-road robot-view images.**
 
 WinterNav-RUGD is a research prototype that converts official RUGD semantic annotations into conservative robot-specific terrain-risk maps and evaluates zero-shot pretrained semantic-segmentation models on off-road terrain.
