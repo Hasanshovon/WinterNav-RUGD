@@ -1,0 +1,76 @@
+labels:
+  - id: 0
+    name: "void"
+    color: [0, 0, 0]
+  - id: 1
+    name: "dirt"
+    color: [108, 64, 20]
+  - id: 2
+    name: "sand"
+    color: [255, 229, 204]
+  - id: 3
+    name: "grass"
+    color: [0, 102, 0]
+  - id: 4
+    name: "tree"
+    color: [0, 255, 0]
+  - id: 5
+    name: "pole"
+    color: [0, 153, 153]
+  - id: 6
+    name: "water"
+    color: [0, 128, 255]
+  - id: 7
+    name: "sky"
+    color: [0, 0, 255]
+  - id: 8
+    name: "vehicle"
+    color: [255, 255, 0]
+  - id: 9
+    name: "container/generic-object"
+    color: [255, 0, 127]
+  - id: 10
+    name: "asphalt"
+    color: [64, 64, 64]
+  - id: 11
+    name: "gravel"
+    color: [255, 128, 0]
+  - id: 12
+    name: "building"
+    color: [255, 0, 0]
+  - id: 13
+    name: "mulch"
+    color: [153, 76, 0]
+  - id: 14
+    name: "rock-bed"
+    color: [102, 102, 0]
+  - id: 15
+    name: "log"
+    color: [102, 0, 0]
+  - id: 16
+    name: "bicycle"
+    color: [0, 255, 128]
+  - id: 17
+    name: "person"
+    color: [204, 153, 255]
+  - id: 18
+    name: "fence"
+    color: [102, 0, 204]
+  - id: 19
+    name: "bush"
+    color: [255, 153, 204]
+  - id: 20
+    name: "sign"
+    color: [0, 102, 102]
+  - id: 21
+    name: "rock"
+    color: [153, 204, 255]
+  - id: 22
+    name: "bridge"
+    color: [102, 255, 255]
+  - id: 23
+    name: "concrete"
+    color: [101, 101, 11]
+  - id: 24
+    name: "picnic-table"
+    color: [114, 85, 47]

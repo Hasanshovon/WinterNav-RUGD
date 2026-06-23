@@ -1,0 +1,49 @@
+# Conservative robot-specific traversability mapping for WinterNav-RUGD.
+#
+# This is a research policy for a small autonomous ground vehicle. It is not an
+# official RUGD traversability label or dataset-provided driving policy.
+#
+# Risk values:
+# 0: low risk / likely traversable
+# 1: medium risk / uncertain terrain
+# 2: high risk / obstacle or non-traversable
+#
+# This mapping uses verified RUGD label names from config/rugd_labels.yaml.
+
+risk_levels:
+  low_risk:
+    value: 0
+    labels:
+      - dirt
+      - asphalt
+      - gravel
+      - concrete
+
+  medium_risk:
+    value: 1
+    labels:
+      - sand
+      - grass
+      - mulch
+      - bush
+
+  high_risk:
+    value: 2
+    labels:
+      - void
+      - tree
+      - pole
+      - water
+      - sky
+      - vehicle
+      - container/generic-object
+      - building
+      - log
+      - bicycle
+      - person
+      - fence
+      - sign
+      - rock
+      - rock-bed
+      - bridge
+      - picnic-table

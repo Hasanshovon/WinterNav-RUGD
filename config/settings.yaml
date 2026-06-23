@@ -1,0 +1,23 @@
+seed: 42
+segmentation_model: nvidia/segformer-b0-finetuned-ade-512-512
+device: auto
+prediction_resize_mode: nearest
+
+paths:
+  data_root: data/raw/rugd
+  subset_root: data/subset
+  output_root: outputs
+
+risk_thresholds:
+  low_max: 0.33
+  medium_max: 0.66
+
+weather:
+  fog_severity: 0.3
+  snow_severity: 0.3
+  blur_severity: 0.2
+  low_light_severity: 0.3
+
+models:
+  use_pretrained: true
+  train_models: false

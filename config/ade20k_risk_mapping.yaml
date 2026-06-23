@@ -1,0 +1,50 @@
+# Initial ADE20K-to-traversability mapping for the zero-shot SegFormer baseline.
+#
+# These are heuristic keyword rules for ADE20K semantic predictions from
+# nvidia/segformer-b0-finetuned-ade-512-512. They are not RUGD labels and are
+# not calibrated traversability estimates. Unmapped ADE20K labels default to
+# high risk.
+
+default_risk: 2
+
+risk_levels:
+  low_risk:
+    value: 0
+    keywords:
+      - road
+      - sidewalk
+      - path
+      - floor
+      - ground
+      - dirt
+      - sand
+      - field
+      - earth
+
+  medium_risk:
+    value: 1
+    keywords:
+      - grass
+      - plant
+      - vegetation
+
+  high_risk:
+    value: 2
+    keywords:
+      - tree
+      - person
+      - car
+      - truck
+      - bus
+      - bicycle
+      - motorcycle
+      - pole
+      - wall
+      - building
+      - fence
+      - rock
+      - water
+      - stairs
+      - sign
+      - bench
+      - sky
