@@ -1,0 +1,4 @@
+sequence,filename,image_path,mask_path
+creek,creek_01021.png,data\raw\rugd\RUGD_frames-with-annotations\RUGD_frames-with-annotations\creek\creek_01021.png,data\raw\rugd\RUGD_annotations\RUGD_annotations\creek\creek_01021.png
+creek,creek_01086.png,data\raw\rugd\RUGD_frames-with-annotations\RUGD_frames-with-annotations\creek\creek_01086.png,data\raw\rugd\RUGD_annotations\RUGD_annotations\creek\creek_01086.png
+creek,creek_01221.png,data\raw\rugd\RUGD_frames-with-annotations\RUGD_frames-with-annotations\creek\creek_01221.png,data\raw\rugd\RUGD_annotations\RUGD_annotations\creek\creek_01221.png

@@ -1,0 +1,113 @@
+{
+  "mode": "segformer_eval",
+  "model": "nvidia/segformer-b0-finetuned-ade-512-512",
+  "model_key": "segformer_b0",
+  "device_used": "cuda",
+  "subset_size_requested": 30,
+  "seed": 42,
+  "successful_images": 30,
+  "failed_images": 0,
+  "total_pixels_evaluated": 11352000,
+  "elapsed_seconds": 30.71284149994608,
+  "runtime_per_image_seconds": 1.023761383331536,
+  "cuda_memory": {
+    "device": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "allocated_bytes": 23563264,
+    "reserved_bytes": 658505728,
+    "max_allocated_bytes": 496802304
+  },
+  "aggregate_metrics": {
+    "accuracy": 0.7174064482029598,
+    "balanced_accuracy": 0.6982730577355653,
+    "macro_f1": 0.6129506113058244,
+    "per_class_precision": {
+      "low_risk": 0.2467480756029618,
+      "medium_risk": 0.9047461419911419,
+      "high_risk": 0.8951514759914684
+    },
+    "per_class_recall": {
+      "low_risk": 0.7721772364644817,
+      "medium_risk": 0.40302495126555604,
+      "high_risk": 0.919616985476658
+    },
+    "per_class_f1": {
+      "low_risk": 0.37398864247551933,
+      "medium_risk": 0.5576438746258583,
+      "high_risk": 0.9072193168160955
+    },
+    "high_risk_recall": 0.919616985476658,
+    "unsafe_to_safe_error_rate": 0.06653122551629873,
+    "unsafe_to_medium_error_rate": 0.01385178900704323,
+    "safe_to_high_risk_rate": 0.13747598830492136,
+    "total_pixels": 11352000
+  },
+  "confusion_matrix": [
+    [
+      774615,
+      90632,
+      137910
+    ],
+    [
+      1952744,
+      1675465,
+      529015
+    ],
+    [
+      411936,
+      85765,
+      5693918
+    ]
+  ],
+  "worst_images_by_unsafe_to_safe_error": [
+    {
+      "sequence": "creek",
+      "filename": "creek_01221.png",
+      "image_path": "data\\raw\\rugd\\RUGD_frames-with-annotations\\RUGD_frames-with-annotations\\creek\\creek_01221.png",
+      "unsafe_to_safe_error_rate": 0.5470873628105671,
+      "high_risk_recall": 0.4528945203940765,
+      "accuracy": 0.3683007399577167
+    },
+    {
+      "sequence": "creek",
+      "filename": "creek_01086.png",
+      "image_path": "data\\raw\\rugd\\RUGD_frames-with-annotations\\RUGD_frames-with-annotations\\creek\\creek_01086.png",
+      "unsafe_to_safe_error_rate": 0.41958157635839677,
+      "high_risk_recall": 0.5803661859834754,
+      "accuracy": 0.5490248414376321
+    },
+    {
+      "sequence": "creek",
+      "filename": "creek_01021.png",
+      "image_path": "data\\raw\\rugd\\RUGD_frames-with-annotations\\RUGD_frames-with-annotations\\creek\\creek_01021.png",
+      "unsafe_to_safe_error_rate": 0.20977981670054188,
+      "high_risk_recall": 0.562269900138781,
+      "accuracy": 0.4666516913319239
+    },
+    {
+      "sequence": "trail",
+      "filename": "trail_02906.png",
+      "image_path": "data\\raw\\rugd\\RUGD_frames-with-annotations\\RUGD_frames-with-annotations\\trail\\trail_02906.png",
+      "unsafe_to_safe_error_rate": 0.07989775234007035,
+      "high_risk_recall": 0.9201022476599297,
+      "accuracy": 0.3427510570824524
+    },
+    {
+      "sequence": "trail-5",
+      "filename": "trail-5_01791.png",
+      "image_path": "data\\raw\\rugd\\RUGD_frames-with-annotations\\RUGD_frames-with-annotations\\trail-5\\trail-5_01791.png",
+      "unsafe_to_safe_error_rate": 0.07165234876435156,
+      "high_risk_recall": 0.9283476512356484,
+      "accuracy": 0.27341701902748416
+    }
+  ],
+  "outputs": {
+    "per_image_metrics_csv": "outputs\\phase4_segformer_b0_cuda\\per_image_metrics.csv",
+    "summary_metrics_json": "outputs\\phase4_segformer_b0_cuda\\summary_metrics.json",
+    "runtime_summary_json": "outputs\\phase4_segformer_b0_cuda\\runtime_summary.json",
+    "confusion_matrix_npy": "outputs\\phase4_segformer_b0_cuda\\confusion_matrix.npy",
+    "confusion_matrix_csv": "outputs\\phase4_segformer_b0_cuda\\confusion_matrix.csv",
+    "selected_pairs_csv": "outputs\\phase4_segformer_b0_cuda\\selected_pairs.csv",
+    "failures_csv": "outputs\\phase4_segformer_b0_cuda\\failures.csv",
+    "qualitative_examples_dir": "outputs\\phase4_segformer_b0_cuda\\qualitative_examples"
+  }
+}

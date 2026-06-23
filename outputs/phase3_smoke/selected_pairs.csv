@@ -1,0 +1,4 @@
+sequence,filename,image_path,mask_path
+creek,creek_01021.png,data\raw\rugd\RUGD_frames-with-annotations\RUGD_frames-with-annotations\creek\creek_01021.png,data\raw\rugd\RUGD_annotations\RUGD_annotations\creek\creek_01021.png
+park-8,park-8_00381.png,data\raw\rugd\RUGD_frames-with-annotations\RUGD_frames-with-annotations\park-8\park-8_00381.png,data\raw\rugd\RUGD_annotations\RUGD_annotations\park-8\park-8_00381.png
+trail-6,trail-6_01916.png,data\raw\rugd\RUGD_frames-with-annotations\RUGD_frames-with-annotations\trail-6\trail-6_01916.png,data\raw\rugd\RUGD_annotations\RUGD_annotations\trail-6\trail-6_01916.png

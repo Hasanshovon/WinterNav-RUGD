@@ -1,0 +1,104 @@
+{
+  "mode": "segformer_eval",
+  "model": "nvidia/segformer-b0-finetuned-ade-512-512",
+  "device_used": "cpu",
+  "subset_size_requested": 30,
+  "seed": 42,
+  "successful_images": 30,
+  "failed_images": 0,
+  "total_pixels_evaluated": 11352000,
+  "elapsed_seconds": 47.73890550003853,
+  "aggregate_metrics": {
+    "accuracy": 0.7174043340380549,
+    "balanced_accuracy": 0.6983135770002727,
+    "macro_f1": 0.6129568557263441,
+    "per_class_precision": {
+      "low_risk": 0.24677179448795575,
+      "medium_risk": 0.9047970874305519,
+      "high_risk": 0.8951598462387174
+    },
+    "per_class_recall": {
+      "low_risk": 0.7723437109046739,
+      "medium_risk": 0.4029821342318817,
+      "high_risk": 0.9196148858642627
+    },
+    "per_class_f1": {
+      "low_risk": 0.37403541108523236,
+      "medium_risk": 0.5576125622734047,
+      "high_risk": 0.907222593820395
+    },
+    "high_risk_recall": 0.9196148858642627,
+    "unsafe_to_safe_error_rate": 0.06653332512869413,
+    "unsafe_to_medium_error_rate": 0.01385178900704323,
+    "safe_to_high_risk_rate": 0.1374321267757689,
+    "total_pixels": 11352000
+  },
+  "confusion_matrix": [
+    [
+      774782,
+      90509,
+      137866
+    ],
+    [
+      1952939,
+      1675287,
+      528998
+    ],
+    [
+      411949,
+      85765,
+      5693905
+    ]
+  ],
+  "worst_images_by_unsafe_to_safe_error": [
+    {
+      "sequence": "creek",
+      "filename": "creek_01221.png",
+      "image_path": "data\\raw\\rugd\\RUGD_frames-with-annotations\\RUGD_frames-with-annotations\\creek\\creek_01221.png",
+      "unsafe_to_safe_error_rate": 0.5470873628105671,
+      "high_risk_recall": 0.4528945203940765,
+      "accuracy": 0.36838002114164903
+    },
+    {
+      "sequence": "creek",
+      "filename": "creek_01086.png",
+      "image_path": "data\\raw\\rugd\\RUGD_frames-with-annotations\\RUGD_frames-with-annotations\\creek\\creek_01086.png",
+      "unsafe_to_safe_error_rate": 0.41965122656923376,
+      "high_risk_recall": 0.5802965357726385,
+      "accuracy": 0.5489085623678647
+    },
+    {
+      "sequence": "creek",
+      "filename": "creek_01021.png",
+      "image_path": "data\\raw\\rugd\\RUGD_frames-with-annotations\\RUGD_frames-with-annotations\\creek\\creek_01021.png",
+      "unsafe_to_safe_error_rate": 0.20977981670054188,
+      "high_risk_recall": 0.562269900138781,
+      "accuracy": 0.4666516913319239
+    },
+    {
+      "sequence": "trail",
+      "filename": "trail_02906.png",
+      "image_path": "data\\raw\\rugd\\RUGD_frames-with-annotations\\RUGD_frames-with-annotations\\trail\\trail_02906.png",
+      "unsafe_to_safe_error_rate": 0.07989775234007035,
+      "high_risk_recall": 0.9201022476599297,
+      "accuracy": 0.3427510570824524
+    },
+    {
+      "sequence": "trail-5",
+      "filename": "trail-5_01791.png",
+      "image_path": "data\\raw\\rugd\\RUGD_frames-with-annotations\\RUGD_frames-with-annotations\\trail-5\\trail-5_01791.png",
+      "unsafe_to_safe_error_rate": 0.07165234876435156,
+      "high_risk_recall": 0.9283476512356484,
+      "accuracy": 0.27341701902748416
+    }
+  ],
+  "outputs": {
+    "per_image_metrics_csv": "outputs\\phase3_eval\\per_image_metrics.csv",
+    "summary_metrics_json": "outputs\\phase3_eval\\summary_metrics.json",
+    "confusion_matrix_npy": "outputs\\phase3_eval\\confusion_matrix.npy",
+    "confusion_matrix_csv": "outputs\\phase3_eval\\confusion_matrix.csv",
+    "selected_pairs_csv": "outputs\\phase3_eval\\selected_pairs.csv",
+    "failures_csv": "outputs\\phase3_eval\\failures.csv",
+    "qualitative_examples_dir": "outputs\\phase3_eval\\qualitative_examples"
+  }
+}

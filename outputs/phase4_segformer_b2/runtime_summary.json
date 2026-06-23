@@ -1,0 +1,15 @@
+{
+  "model": "nvidia/segformer-b2-finetuned-ade-512-512",
+  "model_key": "segformer_b2",
+  "device_used": "cuda",
+  "successful_images": 30,
+  "failed_images": 0,
+  "elapsed_seconds": 27.629989000037313,
+  "runtime_per_image_seconds": 0.9209996333345771,
+  "cuda_memory": {
+    "device": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "allocated_bytes": 118405120,
+    "reserved_bytes": 1111490560,
+    "max_allocated_bytes": 592689152
+  }
+}

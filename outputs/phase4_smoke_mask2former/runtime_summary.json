@@ -1,0 +1,15 @@
+{
+  "model": "facebook/mask2former-swin-small-ade-semantic",
+  "model_key": "mask2former_swin_small",
+  "device_used": "cuda",
+  "successful_images": 3,
+  "failed_images": 0,
+  "elapsed_seconds": 42.225975499954075,
+  "runtime_per_image_seconds": 14.075325166651359,
+  "cuda_memory": {
+    "device": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "allocated_bytes": 288312832,
+    "reserved_bytes": 1174405120,
+    "max_allocated_bytes": 776817664
+  }
+}

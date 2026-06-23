@@ -1,0 +1,15 @@
+{
+  "model": "openmmlab/upernet-convnext-tiny",
+  "model_key": "upernet_convnext_tiny",
+  "device_used": "cuda",
+  "successful_images": 3,
+  "failed_images": 0,
+  "elapsed_seconds": 38.76012820005417,
+  "runtime_per_image_seconds": 12.920042733351389,
+  "cuda_memory": {
+    "device": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "allocated_bytes": 253096960,
+    "reserved_bytes": 1499463680,
+    "max_allocated_bytes": 872186368
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "mode": "segformer_eval",
+  "model": "nvidia/segformer-b0-finetuned-ade-512-512",
+  "device_used": "cpu",
+  "subset_size_requested": 3,
+  "seed": 42,
+  "successful_images": 3,
+  "failed_images": 0,
+  "total_pixels_evaluated": 1135200,
+  "elapsed_seconds": 15.353303300100379,
+  "aggregate_metrics": {
+    "accuracy": 0.6677598661028894,
+    "balanced_accuracy": 0.4303635360580566,
+    "macro_f1": 0.4350366810244138,
+    "per_class_precision": {
+      "low_risk": 0.0010535196737149028,
+      "medium_risk": 0.6457256074460134,
+      "high_risk": 0.8882828001580612
+    },
+    "per_class_recall": {
+      "low_risk": 0.12252160650737164,
+      "medium_risk": 0.34056347003359005,
+      "high_risk": 0.8280055316332081
+    },
+    "per_class_f1": {
+      "low_risk": 0.002089076125587282,
+      "medium_risk": 0.4459352913515559,
+      "high_risk": 0.8570856755960982
+    },
+    "high_risk_recall": 0.8280055316332081,
+    "unsafe_to_safe_error_rate": 0.08181442812481567,
+    "unsafe_to_medium_error_rate": 0.09018004024197618,
+    "safe_to_high_risk_rate": 0.6731062531774276,
+    "total_pixels": 1135200
+  },
+  "confusion_matrix": [
+    [
+      241,
+      402,
+      1324
+    ],
+    [
+      166101,
+      126127,
+      78120
+    ],
+    [
+      62415,
+      68797,
+      631673
+    ]
+  ],
+  "worst_images_by_unsafe_to_safe_error": [
+    {
+      "sequence": "creek",
+      "filename": "creek_01021.png",
+      "image_path": "data\\raw\\rugd\\RUGD_frames-with-annotations\\RUGD_frames-with-annotations\\creek\\creek_01021.png",
+      "unsafe_to_safe_error_rate": 0.20977981670054188,
+      "high_risk_recall": 0.562269900138781,
+      "accuracy": 0.4666516913319239
+    },
+    {
+      "sequence": "trail-6",
+      "filename": "trail-6_01916.png",
+      "image_path": "data\\raw\\rugd\\RUGD_frames-with-annotations\\RUGD_frames-with-annotations\\trail-6\\trail-6_01916.png",
+      "unsafe_to_safe_error_rate": 0.0030686792217704878,
+      "high_risk_recall": 0.9969313207782295,
+      "accuracy": 0.5456580338266385
+    },
+    {
+      "sequence": "park-8",
+      "filename": "park-8_00381.png",
+      "image_path": "data\\raw\\rugd\\RUGD_frames-with-annotations\\RUGD_frames-with-annotations\\park-8\\park-8_00381.png",
+      "unsafe_to_safe_error_rate": 0.0,
+      "high_risk_recall": 0.9941288531668995,
+      "accuracy": 0.9909698731501058
+    }
+  ],
+  "outputs": {
+    "per_image_metrics_csv": "outputs\\phase3_smoke\\per_image_metrics.csv",
+    "summary_metrics_json": "outputs\\phase3_smoke\\summary_metrics.json",
+    "confusion_matrix_npy": "outputs\\phase3_smoke\\confusion_matrix.npy",
+    "confusion_matrix_csv": "outputs\\phase3_smoke\\confusion_matrix.csv",
+    "selected_pairs_csv": "outputs\\phase3_smoke\\selected_pairs.csv",
+    "failures_csv": "outputs\\phase3_smoke\\failures.csv",
+    "qualitative_examples_dir": "outputs\\phase3_smoke\\qualitative_examples"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "mode": "segformer_eval",
+  "model": "facebook/mask2former-swin-small-ade-semantic",
+  "model_key": "mask2former_swin_small",
+  "device_used": "cuda",
+  "subset_size_requested": 3,
+  "seed": 42,
+  "successful_images": 3,
+  "failed_images": 0,
+  "total_pixels_evaluated": 1135200,
+  "elapsed_seconds": 42.225975499954075,
+  "runtime_per_image_seconds": 14.075325166651359,
+  "cuda_memory": {
+    "device": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "allocated_bytes": 288312832,
+    "reserved_bytes": 1174405120,
+    "max_allocated_bytes": 776817664
+  },
+  "aggregate_metrics": {
+    "accuracy": 0.8815953136011275,
+    "balanced_accuracy": 0.5268283896728482,
+    "macro_f1": 0.5569511755074369,
+    "per_class_precision": {
+      "low_risk": 0.0,
+      "medium_risk": 0.8959151532066745,
+      "high_risk": 0.9106891213723536
+    },
+    "per_class_recall": {
+      "low_risk": 0.0,
+      "medium_risk": 0.6343575024702395,
+      "high_risk": 0.9461276665483052
+    },
+    "per_class_f1": {
+      "low_risk": 0.0,
+      "medium_risk": 0.7427833162999673,
+      "high_risk": 0.9280702102223435
+    },
+    "high_risk_recall": 0.9461276665483052,
+    "unsafe_to_safe_error_rate": 0.03681844254459042,
+    "unsafe_to_medium_error_rate": 0.01705389090710442,
+    "safe_to_high_risk_rate": 0.9926977687626775,
+    "total_pixels": 1135200
+  },
+  "confusion_matrix": [
+    [
+      0,
+      54,
+      7341
+    ],
+    [
+      126,
+      134820,
+      77584
+    ],
+    [
+      33699,
+      15609,
+      865967
+    ]
+  ],
+  "worst_images_by_unsafe_to_safe_error": [
+    {
+      "sequence": "creek",
+      "filename": "creek_01021.png",
+      "image_path": "data\\raw\\rugd\\RUGD_frames-with-annotations\\RUGD_frames-with-annotations\\creek\\creek_01021.png",
+      "unsafe_to_safe_error_rate": 0.11357983638097242,
+      "high_risk_recall": 0.848179051199658,
+      "accuracy": 0.7765909090909091
+    },
+    {
+      "sequence": "creek",
+      "filename": "creek_01221.png",
+      "image_path": "data\\raw\\rugd\\RUGD_frames-with-annotations\\RUGD_frames-with-annotations\\creek\\creek_01221.png",
+      "unsafe_to_safe_error_rate": 0.0008188791501048963,
+      "high_risk_recall": 0.9911952374568367,
+      "accuracy": 0.9300422832980972
+    },
+    {
+      "sequence": "creek",
+      "filename": "creek_01086.png",
+      "image_path": "data\\raw\\rugd\\RUGD_frames-with-annotations\\RUGD_frames-with-annotations\\creek\\creek_01086.png",
+      "unsafe_to_safe_error_rate": 0.0,
+      "high_risk_recall": 0.9938040333276259,
+      "accuracy": 0.9381527484143763
+    }
+  ],
+  "outputs": {
+    "per_image_metrics_csv": "outputs\\phase4_smoke_mask2former\\per_image_metrics.csv",
+    "summary_metrics_json": "outputs\\phase4_smoke_mask2former\\summary_metrics.json",
+    "runtime_summary_json": "outputs\\phase4_smoke_mask2former\\runtime_summary.json",
+    "confusion_matrix_npy": "outputs\\phase4_smoke_mask2former\\confusion_matrix.npy",
+    "confusion_matrix_csv": "outputs\\phase4_smoke_mask2former\\confusion_matrix.csv",
+    "selected_pairs_csv": "outputs\\phase4_smoke_mask2former\\selected_pairs.csv",
+    "failures_csv": "outputs\\phase4_smoke_mask2former\\failures.csv",
+    "qualitative_examples_dir": "outputs\\phase4_smoke_mask2former\\qualitative_examples"
+  }
+}

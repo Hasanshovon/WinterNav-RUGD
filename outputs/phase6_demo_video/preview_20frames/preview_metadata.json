@@ -1,0 +1,39 @@
+{
+  "type": "20-frame preview",
+  "output_path": "outputs\\phase6_demo_video\\preview_20frames\\winternav_main_demo_preview_20frames.mp4",
+  "frames_dir": "outputs\\phase6_demo_video\\preview_20frames\\frames",
+  "fps": 5,
+  "frame_count": 20,
+  "duration_seconds": 4.0,
+  "resolution": [
+    2084,
+    1208
+  ],
+  "model": "segformer_b2",
+  "device": "cuda",
+  "codec": "avc1",
+  "mp4_encoding_succeeded": true,
+  "runtime_seconds": 29.090321099967696,
+  "selected_frame_filenames": [
+    "creek_00001.png",
+    "creek_00006.png",
+    "creek_00011.png",
+    "creek_00016.png",
+    "creek_00021.png",
+    "creek_00026.png",
+    "creek_00031.png",
+    "creek_00036.png",
+    "creek_00041.png",
+    "creek_00046.png",
+    "creek_00051.png",
+    "creek_00056.png",
+    "creek_00061.png",
+    "creek_00066.png",
+    "creek_00071.png",
+    "creek_00076.png",
+    "creek_00081.png",
+    "creek_00086.png",
+    "creek_00091.png",
+    "creek_00096.png"
+  ]
+}
